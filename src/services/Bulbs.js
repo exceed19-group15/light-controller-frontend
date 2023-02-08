@@ -22,3 +22,8 @@ export async function getParty() {
     const res = await axios.put(`http://group15.exceed19.online/party`)
     return res.data
 }
+export async function updateParty(body) {
+    // body : {"is_on": true}
+    const res = await axios.put(`http://group15.exceed19.online/party`, body)
+    return res.data
+}
