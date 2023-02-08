@@ -1,13 +1,13 @@
-import axios from "axios"
+// import axios from "axios"
 
-const URL = ""
+// const URL = ""
 
-export async function getBulbs() {
-    const res = await axios.get(URL)
-    return res.data
-}
+// export async function getBulbs() {
+//     const res = await axios.get(URL)
+//     return res.data
+// }
 
-export async function getBulb(id) {
-    const res = await axios.get(`${URL}/${id}`)
-    return res.data
-}
+// export async function getBulb(id) {
+//     const res = await axios.get(`${URL}/${id}`)
+//     return res.data
+// }

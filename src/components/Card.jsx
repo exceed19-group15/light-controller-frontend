@@ -8,22 +8,9 @@ const Card = ({ bulb_id, room_name, is_on, is_auto, light_level  }) => {
 
 	return (
 		<div className='card'>
-            <p>dksal;dkas;ldkl;sadk;saldks;a;d;skads;a
-                dsmkaldlsadksadjs;ajdsadjslajdslajdlsa
-                djksaldjaklsjdlsajdlaskjdlsa
-                dsakjldjkasldjkasdjlkasddsa
+            <p>
+                {bulb_id}
             </p>
-            <div>
-
-            <div>
-			
-            </div>
-
-			<div className="">
-                
-			</div>
-
-            </div>
 		</div>
 	)
 }
