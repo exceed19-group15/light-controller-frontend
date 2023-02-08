@@ -1,5 +1,5 @@
 import './App.css';
-import Home from '/Users/kulisarazhou/Documents/exceedfront/light-controller-frontend/src/Pages/Home.jsx';
+import Home from './pages/Home.jsx';
 
 
 function App() {
