@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Slider from "@mui/material/Slider";
 import Switch from "@mui/material/Switch";
 import { updateBulb } from "../services/Bulbs";
+import lightbulb from "../assets/lightbulb.png"
+import bulb from "../assets/bulb.png"
 
 const Card = ({ bulb_id, room_name, is_on, is_auto, light_level }) => {
 
@@ -39,11 +41,11 @@ const Card = ({ bulb_id, room_name, is_on, is_auto, light_level }) => {
     <div className="card">
       <div className="grid-container">
         <div>
-          <p>{bulb_id}</p>
-          <p>{room_name}</p>
+          <img src={switchState ? lightbulb : bulb} alt="" />
         </div>
-        <div>
-          <h4>Bulb: <Switch {...label} checked={switchState} onChange={onSwitchChange} /></h4>
+        <div className="space">
+            <h3>{room_name}</h3>
+          <h4>Bulb: <Switch {...label} checked={switchState} disabled={autoState} onChange={onSwitchChange} /></h4>
           <h4>Auto: <Switch {...label} checked={autoState} onChange={onAutoChange} /></h4>
           <Slider
             aria-label="Default"
