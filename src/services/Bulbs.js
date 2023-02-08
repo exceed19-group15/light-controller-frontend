@@ -12,7 +12,11 @@ export async function getBulbs() {
         console.log(err)
     }
 }
-
+export async function updateBulb(bulb_id, body) {
+    // body : {"is_on": true}
+    const res = await axios.put(`http://group15.exceed19.online/bulb/${bulb_id}`, body)
+    return res.data
+}
 // export async function getBulb(id) {
 //     const res = await axios.get(`${URL}/${id}`)
 //     return res.data

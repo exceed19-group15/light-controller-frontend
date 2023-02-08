@@ -1,7 +1,7 @@
 .card {
     position: relative;
     width: 539px;
-    height: 150px;
+    height: auto;
     padding: 2rem;
 
     background: #F1F8FF;
