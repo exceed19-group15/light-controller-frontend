@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useState } from "react"
 import { getBlubs } from '../services/Bulbs'
+import Card from '../components/Card'
 
 const Home = () => {
     const [bulbs, setBulbs] = useState([])
