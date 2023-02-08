@@ -8,9 +8,14 @@ const Card = ({ bulb_id, room_name, is_on, is_auto, light_level  }) => {
 
 	return (
 		<div className='card'>
-            <p>
-                {bulb_id}
-            </p>
+            <div className='grid-container'>
+            <div>
+            <p>{bulb_id}</p>
+            </div>
+            <div>
+            <p>{room_name}</p>
+            </div>
+            </div>
 		</div>
 	)
 }

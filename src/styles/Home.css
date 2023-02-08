@@ -1,4 +1,8 @@
 .home-container {
-    justify-content: center;
+    margin: 10%;
+}
+
+.grid {
     display: flex;
+    gap: 2rem;
 }
