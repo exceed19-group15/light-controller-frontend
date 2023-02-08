@@ -1,8 +1,10 @@
 // import { useEffect } from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 // import { getBlubs } from '../services/Bulbs'
 import Card from '../components/Card'
 import '../styles/Home.css'
+import { getBulbs } from '../services/Bulbs'
+
 
 const sampleData = [
     {
@@ -29,15 +31,11 @@ const sampleData = [
 ]
 
 const Home = () => {
-    const [bulbs] = useState(sampleData)
+    const [bulbs, setBulb] = useState(sampleData)
 
-    bulbs.map(bulb => console.log(bulb))
-
-    // useEffect(() => {
-    //     getBlubs.then(data => setBulbs(data))
-
-    console.log()
-    // },[])
+    useEffect(() => {
+        getBulbs().then(data => setBulb(data))
+    },[])
 
     return (
         <div className="home-container">
